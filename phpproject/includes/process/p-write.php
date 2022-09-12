@@ -20,7 +20,8 @@
             if ($h->isEmpty(array($title, $post, $audience))){
                 $msg = 'All fields are required';     
             } else {
-                $member = new Admin($username);
+                $msg = $_SESSION['username'];
+                $member = new Admin($_SESSION['username']);
                 $member->insertIntoPostDB($title, $post, $audience);
                 $msg = 'Message saved successfully.';
             }

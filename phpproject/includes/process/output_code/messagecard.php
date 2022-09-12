@@ -12,7 +12,7 @@
         ?>    
         
         <span class="post-time">Posted by <?php echo $username; ?> on <?php echo date('d-M-Y g:i a', $postdate); ?>  (Eastern Time)</span>
-        <p class="card-text">"post_text"</p>            
+        <p class="card-text"><?php echo $post; ?></p>            
 
     </div>
 </div> 

@@ -5,7 +5,7 @@ class Admin {
     private $username;
 
     public function __construct($pUsername){
-        $db = new Database();
+        $this->db = new Database();
         $this->username = $pUsername;
     }  
 
@@ -39,7 +39,6 @@ class Admin {
         );
 
         $this->db->queryDB($sql, Database::EXECUTE, $values);
-        echo "szia";
     }
 }
 

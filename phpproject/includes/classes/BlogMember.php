@@ -7,6 +7,7 @@ class BlogMember extends BlogReader{
     public function __construct($pUsername){
         parent::__construct();
         $this->username = $pUsername;
+        $this->type = BlogMember::MEMBER;
     }  
 
     public function isDuplicateID(){
